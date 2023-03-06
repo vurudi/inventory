@@ -1,0 +1,48 @@
+Please ensure that you thoroughly review this file.
+
+
+I have implemented multiple methods in this project, but I will focus on the key areas to ensure
+that you understand the changes made to enable the project to perform CRUD operations successfully.
+CRUD stands for create, read, update, and delete, which are fundamental concepts in data management.
+
+
+First and foremost, the data was previously loaded from a static point, meaning that it was hard-coded
+and could not be permanently modified. Instead, any modifications to the data were made during runtime
+and were lost thereafter.
+
+In contrast to static data, dynamic data is data that is generated or obtained at runtime from various
+sources such as databases. In order to enable CRUD operations on the data, an external data source was
+created and integrated into our application. This enables the application to perform updates, inserts,
+reads, and deletes on the data in the external data source.
+
+To ensure the project can successfully perform CRUD operations, several modifications were made to the code
+
+    1. The first step was to correct the prepareData() function in the HomeControl.java class to retrieve data from the
+    inventory_data.csv file.
+    2. Next, the addNewPart() function was modified to enable the addition of new records to the CSV file under the part
+    table. Similarly, the addNewProduct() function was modified to enable the addition of new records to the CSV file
+    new product .
+    3. The updatePart() and updateProduct() functions were also modified to enable the updating of records in the CSV file.
+    4. The deleteProductSelected() and deletePartSelected() functions were modified to enable the deletion of records from
+    the CSV file.
+    5. Finally, the productModifyButtonAction() and partModifyButtonAction() functions were modified to allow for the deletion
+    of updated records from the CSV file.
+
+
+
+
+It is important to note that the data in this application is being read from and written to a file, specifically
+the inventory_data.csv file. As a result, I have taken into consideration all possible file exceptions that could
+occur when accessing this file.
+
+
+It is important to note that several modules were imported into the project. Therefore, it is recommended to import
+ the necessary modules if errors are highlighted due to missing imports.
+
+It is essential to emphasize that the project requires a .csv file reader extension to access data from a .csv file.
+If the extension is not installed, the IDE will prompt you to do so, and an internet connection will be necessary.
+The installation file is relatively small, with a size of less than 10 MB.
+
+
+Regards Engineer vurudi100
+
